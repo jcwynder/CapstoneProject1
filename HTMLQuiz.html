@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Quiz</title>
+    <style>
+      body {
+        background-color: #60c3fe;
+      }
+      div#test {
+        border: #6c7bd8 3px solid;
+        padding: 10px 40px 40px 40px;
+        background-color: #ffffff;
+        width: 50%;
+      }
+      button {
+        background-color: #ffcc00;
+      }
+      #after-quiz-link {
+        display: none;
+      }
+    </style>
+    <script src="HTMLQuiz.js"></script>
+  </head>
+  <body>
+    <h2 id="test_status"></h2>
+    <div id="test">
+      <button onclick="checkAnswer()">Submit Answer</button>
+    </div>
+    <button onclick="document.location='QuizHome.html'">Home</button>
+    <button onclick="document.location='HTMLQuiz.html'">Reset</button>
+    <button
+      id="after-quiz-link"
+      onclick="document.location='HTMLAnswerKey.html'"
+    >
+      Answer Key
+    </button>
+  </body>
+</html>
