@@ -1,0 +1,1 @@
+<?php header( 'include_once("index.html")' ) ;  ?>
